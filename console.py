@@ -193,9 +193,12 @@ class HBNBCommand(cmd.Cmd):
     def onecmd(self, line):
         """ Retrieves all instances of a given class """
         if "." in line:
+            index = 0
             arg = line.split(".")
             cmd_list = ["show", "destroy", "update"]
-            if cmd_list[0] in arg[1]:
+            if cmd_list[index] in arg[1] or cmd_list[index + 1] in arg[1]:
+                if cmd_list[index + 1] in arg[1]:
+                    index = 1
                 cmd_unquote = arg[1]
                 class_name = arg[0]
                 if class_name == "":
@@ -203,7 +206,8 @@ class HBNBCommand(cmd.Cmd):
                     return
                 cmd_id = cmd_unquote.split('(')[1].split(')')[0]
                 cmd_id = cmd_id.strip('"')
-                tosend = cmd_list[0] + " " + class_name + " " + cmd_id
+                tosend = cmd_list[index] + " " + class_name + " " + cmd_id
+                print('tosend', tosend)
             else:
                 tosend = arg[1].strip("()") + " " + arg[0]
             return cmd.Cmd.onecmd(self, tosend)
