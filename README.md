@@ -12,9 +12,9 @@
 
 ## Project Description
 
-HBnB is a 4-month-long project which has as its main goal to deploy a clone of the AirBnB website on our server.
-The final version needs to include the following:
-A command interpreter to manipulate data without a visual interface, like in a Shell (perfect for development and debugging).
+HBnB is a 4-month-long project which has as its main goal to deploy a clone of
+the AirBnB website on our server.
+The final version needs to include the following:A command interpreter to manipulate data without a visual interface, like in a Shell (perfect for development and debugging).
 A website (the front-end) that shows the final product to everybody: static and dynamic database or files that store data (data = objects).
 An API that provides a communication interface between the front-end and your data (retrieve, create, delete, update them).
 
@@ -45,18 +45,22 @@ Destroy an object
 * How to start it
 
 In interactive mode:
+```
 $ ./console.py
 (hbnb) help
 
-Documented commands (type help <topic>):
+Documented commands (type help <topics>):
 ========================================
+
 EOF  help  quit
 
 (hbnb)
 (hbnb)
 (hbnb) quit
 $
+```
 In non-interactive mode:
+```
 $ echo "help" | ./console.py
 (hbnb)
 
@@ -76,7 +80,7 @@ Documented commands (type help <topic>):
 EOF  help  quit
 (hbnb)
 $
-
+```
 
 
 * Commands and their usage
@@ -84,63 +88,84 @@ $
 
 quit and EOF to exit the program
 help to print the list of commands with help documentation (see example above).
+
 Usage:
 help <command_name>
 help
+
 Example:
+```
 $ help
 $ help quit
+```
 
 create: Creates a new instance of a class, saves it (to the JSON file) and prints its id
+
 Usage:
 create <class name>
-Example:
-$ create BaseModel
 
+Example:
+```
+$ create BaseModel
+```
 
 show: Prints the string representation of an instance based on the class name and id
+
 Usage:
 show <class name> <instance id>
 <class name>.show(<id>)
+
 Example:
+```
 $ show BaseModel 1234-1234-1234
 $ BaseModel.show(“1234-1234-1234”)
-
+```
 
 destroy: Deletes an instance based on the class name and id (save the change into the JSON file). 
+
 Usage:
 destroy <class name> <instance id>
 <class name>.destroy(<id>)
+
 Example:
+```
 $ destroy BaseModel 1234-1234-1234.
+```
 
 
 all: Prints all string representations of all instances based or not on the class name. 
+
 Usage:
 all <class name>
 <class name>.all()
+
 Example:
+```
 $ all BaseModel
 $ all
 $ User.all()
-
+```
 
 update: Updates an instance based on the class name and id by adding or updating attribute (save the change into the JSON file). 
+
 Usage:
 update <class name> <id> <attribute name> "<attribute value>"
 
 Example:
+```
 $ update BaseModel 1234-1234-1234 email "aibnb@holbertonschool.com"
+```
 
 
 count: Retrieves the number of instances of a class.
+
 Usage:
 <class name>.count().
+
 Example:
+```
 User.count()
-
-
-
+```
 
 
 ##  Prerequisites
