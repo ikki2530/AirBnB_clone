@@ -1,0 +1,15 @@
+/*footer styles*/
+footer
+{
+    background-color: #FFFFFF;
+    height: 60px;
+    width: 100%;
+    border-top: 1px #CCCCCC solid;
+    bottom: 0;
+    /*absolute position *respect to the parent*/
+    position: absolute;
+    /*Using flexbox*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

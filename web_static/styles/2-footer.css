@@ -1,0 +1,13 @@
+/*footer styles*/
+footer
+{
+    background-color: #00FF00;
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+    /*absolute position *respect to the parent*/
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
