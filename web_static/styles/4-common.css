@@ -6,6 +6,9 @@ body
     color: #484848;
     font-size: 14px;
     font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    position: relative;
+    min-height: 93vh;
+    padding-bottom: 60px;
 }
 .container
 {
