@@ -65,9 +65,11 @@
     list-style: none;
     border: #DDDDDD 1px solid;
     border-radius: 0 0 4px 4px;
+    /*dropdowns location*/
     margin-top: -6px;
     padding-top: 30px;
     padding-bottom: 30px;
+    z-index: 1;
 }
 
 .popover li

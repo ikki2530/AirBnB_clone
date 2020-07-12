@@ -1,0 +1,35 @@
+/*place section*/
+.places
+{
+    text-align: center;
+}
+/*h1 header*/
+.places h1
+{
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+
+.places article
+{
+    width: 390px;
+    padding: 20px;
+    margin: 20px;
+    border: #FF5A5F 1px solid;
+    border-radius: 4px;
+    /*extra*/
+    display: inline-block;
+
+    
+
+}
+
+/*specific places*/
+.places article h2
+{
+    font-size: 30px;
+    text-align: center;
+}
