@@ -1,5 +1,4 @@
 # AirBnB clone - Web static
-- This is the visual project of the AirBnB
 
 ## Contents:
 - Project description
@@ -8,7 +7,7 @@
 
 ## Description
 
-This is the second stage of the AIrBnB clone, first part of the frontend(static). It consists of all the HTML and the respective necessary CSS files. The second step in this frontend path will be applying javascript to get a dynamic web.
+This is the second stage of the AirBnB clone, first part of the frontend(static). It consists of all the HTML and the respective necessary CSS files. The second step in this frontend path will be applying javascript to get a dynamic web.
 
 ## Learning Objectives
 
@@ -28,8 +27,8 @@ Learn:
 * How to compute CSS Specificity Value
 * What are Box properties in CSS
 
-# files
-### styles
+# Files
+### [styles](./styles)
 
 -   [2-common.css](./styles/2-common.css)
 -   [2-footer.css](./styles/2-footer.css)
